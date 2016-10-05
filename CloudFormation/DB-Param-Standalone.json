@@ -1,0 +1,18 @@
+{
+    "Description": "This CloudFormation template creates a new DB Parameter groups per parameters defined here",
+    "Resources": {
+      "MyRDSParamGroup": {
+            "Properties": {
+                "Description": "CloudFormation Sample Database Parameter Group",
+                "Family": "MySQL5.5",
+                "Parameters": {
+                    "autocommit": "1",
+                    "general_log": "1",
+					"binlog_cache_size": "12345",
+                    "old_passwords": "0"
+                }
+            },
+            "Type": "AWS::RDS::DBParameterGroup"
+        }
+    }
+}
