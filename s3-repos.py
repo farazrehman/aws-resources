@@ -6,6 +6,7 @@ Created on Feb 3, 2016
 
 import boto3
 
+# Making simple change by adding comment
 s3 = boto3.resource('s3')
 
 
